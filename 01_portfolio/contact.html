@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact with Arpan</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="contact-left"
+        autocomplete="off"
+      >
+        <div class="contact-left-title">
+          <h2>Get In Touch</h2>
+          <hr />
+        </div>
+
+        <input
+          type="hidden"
+          name="access_key"
+          value="2a138ee4-8222-49e9-8bed-b12e8cd4493b"
+        />
+
+        <input
+          type="text"
+          name="name"
+          placeholder="Write Your Name"
+          class="contact-inputs"
+          autocomplete="off"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          autocomplete="off"
+          class="contact-inputs"
+          required
+        />
+        <input
+          type="tel"
+          name="mobile"
+          placeholder="Enter your mobile number"
+          autocomplete="off"
+          class="contact-inputs"
+          required
+        />
+        <textarea
+          name="subject"
+          placeholder="Write subject of your Message"
+          autocomplete="off"
+          class="contact-inputs"
+          id="contact-inputs-subject"
+        ></textarea>
+        <textarea
+          name="message"
+          placeholder="Write Your Message"
+          autocomplete="off"
+          class="contact-inputs"
+          id="contact-inputs-massage"
+          required
+        ></textarea>
+        <button type="submit">
+          Submit <span id = "arrow"><i class="fa-solid fa-arrow-right"></i></span>
+        </button>
+        <a href = "index.html" id = "contact-home-btn"><i class="fa-solid fa-house"></i> <span>Back To Home</span></a>
+      </form>
+    </div>
+    <script src="contact.js"></script>
+  </body>
+</html>

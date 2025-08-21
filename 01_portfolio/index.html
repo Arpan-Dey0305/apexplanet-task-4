@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Arpan • Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="wrap">
+        <div class="brand">Arpan<span>.dev</span></div>
+        <div class="menu">
+          <a href="index.html" style="background: #1f2937">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="card">
+          <h1>
+            Hi, I’m <span style="color: var(--brand)">Arpan</span> — Frontend &
+            JS Enthusiast
+          </h1>
+          <p style="color: var(--muted)">
+            I build clean, responsive interfaces and tiny web apps. Explore my
+            projects and feel free to reach out.
+          </p>
+          <div style="display: flex; gap: 10px; margin-top: 10px">
+            <a class="btn" href="projects.html">View Projects</a>
+            <a
+              class="btn"
+              style="background: #0ea5e9; color: #06243a"
+              href="contact.html"
+              >Contact</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <h3>Highlights</h3>
+          <div class="grid">
+            <div class="card" style="padding: 14px">
+              <span class="tag">HTML</span><span class="tag">CSS</span
+              ><span class="tag">JavaScript</span>
+              <p style="color: var(--muted)">
+                Focus on accessible, performant UI with vanilla JS.
+              </p>
+            </div>
+            <div class="card" style="padding: 14px">
+              <span class="tag">LocalStorage</span><span class="tag">REST</span>
+              <p style="color: var(--muted)">
+                Love building tiny apps that persist data in-browser.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="card">
+        <h2>Skills</h2>
+        <div class="grid">
+          <div class="skill"><span class="tag">Python</span></div>
+          <div class="skill"><span class="tag">C</span></div>
+          <div class="skill"><span class="tag">JavaScript</span></div>
+          <div class="skill"><span class="tag">HTML</span></div>
+          <div class="skill"><span class="tag">CSS</span></div>
+          <br />
+          <div class="skill"><span class="tag">MySQL</span></div>
+          <div class="skill"><span class="tag">Flask</span></div>
+          <br />
+          <div class="skill"><span class="tag">Git/GitHub</span></div>
+        </div>
+      </section>
+
+      <!-- Featured Projects -->
+      <section class="card">
+        <h2>Featured Projects</h2>
+        <div class="grid">
+          <div class="card" style="padding: 14px">
+            <h3>To‑Do / Notes App</h3>
+            <p style="color: var(--muted)">
+              A simple To-Do & Notes web app that saves tasks and quick notes
+              directly in the browser using LocalStorage. Tasks are editable,
+              searchable, and persistent even after refresh.
+            </p>
+            <a class="btn small" href="../02_todo_notes/index.html"
+              >View More</a
+            >
+          </div>
+          <div class="card" style="padding: 14px">
+            <h3>Product Listing</h3>
+            <p style="color: var(--muted)">
+              A responsive product listing app with search, category filters,
+              price range, and sorting options. Built with HTML, CSS, and
+              JavaScript, it dynamically displays products and updates results
+              in real-time.
+            </p>
+            <a class="btn small" href="../03_product_listing/index.html"
+              >View More</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials / Quote -->
+      <section class="card">
+        <blockquote style="font-style: italic; color: var(--muted)">
+          “To become successful online, you only need to remember the following
+          : Good Heart + Passion + Web Design + SEO + Digital Marketing +
+          Dedication + Positiveness + Patience = Success”
+        </blockquote>
+        <p style="text-align: right; margin-top: 6px">
+          — Dr. Christopher Dayagdag
+        </p>
+      </section>
+
+      <!-- Call To Action -->
+      <section class="card" style="text-align: center">
+        <h2>Let’s Build Something Together</h2>
+        <p style="color: var(--muted)">
+          Have an idea? I’d love to collaborate or help bring it to life.
+        </p>
+        <a class="btn" href="contact.html">Get in Touch</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      © <span id="year"></span> Arpan Dey | Portfolio — Built with HTML, CSS &
+      JS | <a href="https://apexplanet.in/" target="_blank">ApexPlanet</a>
+      Task-4
+    </footer>
+
+    <script src="assets/app.js"></script>
+  </body>
+</html>

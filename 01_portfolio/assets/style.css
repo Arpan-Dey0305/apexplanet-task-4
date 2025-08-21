@@ -1,0 +1,136 @@
+:root {
+  --bg: #0f172a; /* slate-900 */
+  --card: #111827; /* gray-900 */
+  --text: #e5e7eb; /* gray-200 */
+  --brand: #10b981; /* emerald-500 */
+  --muted: #94a3b8; /* slate-400 */
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    Segoe UI,
+    Roboto;
+  background: var(--bg);
+  color: var(--text);
+}
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+.nav {
+  position: sticky;
+  top: 0;
+  background: rgba(17, 24, 39, 0.8);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #1f2937;
+  z-index: 5;
+}
+.nav .wrap {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+}
+.brand {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.brand span {
+  color: var(--brand);
+}
+.menu {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.menu a {
+  padding: 8px 10px;
+  border-radius: 12px;
+}
+.menu a:hover {
+  background: #1f2937;
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 24px 16px;
+}
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 24px;
+  align-items: center;
+}
+.card {
+  background: var(--card);
+  border: 1px solid #1f2937;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+}
+.btn {
+  background: var(--brand);
+  color: #052e1f;
+  font-weight: 700;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+.footer {
+  border-top: 1px solid #1f2937;
+  color: var(--muted);
+  padding: 24px;
+  text-align: center;
+  margin-top: 28px;
+}
+.tag {
+  display: inline-block;
+  background: #0b5d46;
+  color: #d1fae5;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  margin-right: 8px;
+}
+input,
+textarea {
+  width: 100%;
+  background: #0b1220;
+  color: var(--text);
+  border: 1px solid #1f2937;
+  border-radius: 12px;
+  padding: 10px;
+}
+label {
+  font-size: 14px;
+  color: var(--muted);
+}
+form .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+@media (max-width: 800px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .menu {
+    display: none;
+  }
+}

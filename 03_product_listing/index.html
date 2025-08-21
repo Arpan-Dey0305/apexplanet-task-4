@@ -1,0 +1,40 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Product Listing — Filter & Sort</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Gadget Store</h1>
+      <div class="sub">Filter by category, price, rating • Sort results</div>
+    </header>
+
+    <section class="panel">
+      <input id="q" placeholder="Search products">
+      <select id="category">
+        <option value="">All Categories</option>
+      </select>
+      <input id="minPrice" type="number" placeholder="Min Price">
+      <input id="maxPrice" type="number" placeholder="Max Price">
+      <select id="sort">
+        <option value="">Sort</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+        <option value="rating-desc">Rating: High to Low</option>
+      </select>
+      <button id="reset">Reset</button>
+    </section>
+
+    <section id="grid" class="grid"></section>
+    <footer class="footer"><span id="count"></span></footer>
+  </div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
